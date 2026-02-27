@@ -258,14 +258,45 @@ text-logo {
 .hero-btns { display: flex; gap: 20px; }
 
 .hero-image { flex: 1; display: flex; justify-content: flex-end; }
+/* Image ko container ke bahar jane se rokne ke liye */
 .floating-img-container {
-    width: 350px; height: 350px;
-    border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
-    animation: float 6s ease-in-out infinite alternate;
+    width: 350px; /* Size aap apne hisab se chota bada kar sakte hain */
+    height: 450px;
+    border-radius: 20px; /* Card jaisa look dene ke liye */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid rgba(0, 243, 255, 0.3);
     box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
 }
+
+.floating-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isse photo kategi nahi aur container mein fit ayegi */
+    object-position: top; /* Face focus mein rakhne ke liye */
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 2; /* Text hamesha upar rahega */
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
 .hero-icon { font-size: 8rem; color: var(--text-secondary); }
 
 /* ================= ABOUT ================= */
