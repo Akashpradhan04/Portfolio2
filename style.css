@@ -438,3 +438,19 @@ footer {
     * { cursor: auto; }
 }
 
+.text-logo {
+    color: #00f3ff !important; /* Sky Blue neon color */
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.8);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #00f3ff !important;
+    display: inline-block;
+}
+.text-logo:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 20px #00f3ff;
+    transition: 0.3s;
+}
+
+
