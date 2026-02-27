@@ -216,14 +216,14 @@ body {
     align-items: center;
 }
 
-.text-logo {
+text-logo {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #00f3ff;
-    border-bottom: 2px solid #00f3ff; 
+    color: #00f3ff !important; 
+    border-bottom: 2px solid #00f3ff;
+    text-transform: uppercase;
 }
-
 
 .nav-links {
     display: flex; gap: 2rem; list-style: none;
