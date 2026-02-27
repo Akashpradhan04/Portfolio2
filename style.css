@@ -135,10 +135,17 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.neon-text {
-    color: var(--neon-cyan);
-    text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+/* Akash.io ko purple se sky blue karne ke liye */
+.text-logo {
+    color: #00f3ff !important; /* Sky Blue neon color */
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.8);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #00f3ff !important;
+    display: inline-block;
 }
+
 
 .neon-icon {
     color: var(--neon-purple);
